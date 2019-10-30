@@ -55,8 +55,8 @@ logo.addEventListener("mouseover", function( event ) {
 // preventdefault
   let allATags = document.querySelectorAll('a');
   for (let i = 0; i < allATags.length; i++) {
-    allATags[i].addEventListener('click', () => {
-        preventDefault();
+    allATags[i].addEventListener('click', (event) => {
+        event.preventDefault();
         });
         
 }
